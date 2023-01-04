@@ -33,13 +33,3 @@
   </nav>
   <router-view></router-view>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      appHello: "Hello from App.vue",
-    };
-  },
-};
-</script>
