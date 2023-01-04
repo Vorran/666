@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "./views/HomeView.vue";
 
 import Vue from "vue";
-import App from "./App.vue";
 
 // Import your components
 import Bibliotheque from "./Bibliotheque-livres.vue";
