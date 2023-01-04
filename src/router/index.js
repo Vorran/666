@@ -1,13 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "./views/HomeView.vue";
+import HomeView from "../views/HomeView.vue";
 
 import Vue from "vue";
 
 // Import your components
-import Bibliotheque from "./Bibliotheque-livres.vue";
-import Pret from "./Pret-livres.vue";
-import Ranger from "./Ranger-livres.vue";
-import Saisie from "./Saisie-livres.vue";
+import Bibliotheque from "../views/Bibliotheque-livres.vue";
+import Pret from "../views/Pret-livres.vue";
+import Ranger from "../views/Ranger-livres.vue";
+import Saisie from "../views/Saisie-livres.vue";
+
+Vue.use(createRouter);
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,7 +22,4 @@ const router = createRouter({
   ],
 });
 
-new Vue({
-  router,
-  render: (h) => h(App),
-}).$mount("#app");
+export default router;
